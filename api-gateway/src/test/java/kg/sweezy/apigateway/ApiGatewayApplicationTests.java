@@ -1,9 +1,13 @@
-package kg.sweezy.usermicroservice;
+package kg.sweezy.apigateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserMicroserviceApplicationTests {
+class ApiGatewayApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
 
 }
