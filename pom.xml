@@ -11,9 +11,9 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>UserMicroservice</module>
-    <module>api-gateway</module>
     <module>eureka-server</module>
+    <module>api-gateway</module>
+    <module>UserMicroservice</module>
   </modules>
 
   <groupId>kg.Sweezy</groupId>
