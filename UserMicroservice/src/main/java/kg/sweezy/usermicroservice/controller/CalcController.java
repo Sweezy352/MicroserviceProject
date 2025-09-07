@@ -7,6 +7,6 @@ public class CalcController {
     }
 
     public void getSomething(){
-
+        return;
     }
 }
