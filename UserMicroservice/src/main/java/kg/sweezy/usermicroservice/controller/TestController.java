@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/test")
 public class TestController {
+    @Value("${message}")
+    private String value;
+
+    @Value("${global}")
+    private String global;
 
     //Проверяем с какого инстанса по uuid
     @Value("${eureka.instance.instance-id}")
@@ -16,5 +21,15 @@ public class TestController {
     @GetMapping("/hello")
     public String hello(){
         return "hello from user microservice:" + id;
+    }
+
+    @GetMapping("/get-value")
+    public String getValue(){
+        return "FROM CONFIG SERVER: " + value;
+    }
+
+    @GetMapping("/get-global")
+    public String getGlobal(){
+        return "FROM CONFIG SERVER: " + global;
     }
 }
